@@ -1,10 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Mainboard from './Mainboard.js'
+import Navbar from './Navbar.js';
+// import Home from './Home.js'
 
 function App() {
   return (
     <div className="App">
-      <h1> Masonry Layout</h1>
+      < Navbar />
+      <Mainboard />
+      {/* < Home /> */}
     </div>
   );
 }
