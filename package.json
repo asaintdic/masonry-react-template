@@ -10,6 +10,7 @@
     "@testing-library/user-event": "^12.1.10",
     "axios": "^0.21.1",
     "dummyjs": "^1.1.7",
+    "firebase": "^8.4.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-masonry-css": "^1.0.16",

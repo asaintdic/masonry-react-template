@@ -9,8 +9,15 @@ import IconButton from '@material-ui/core/IconButton'
 import { Link } from 'react-router-dom'
 
 
-function Navbar() {
+function Navbar(props) {
     const [input, setInput] = useState("")
+
+    const onSearchSubmit = (e) => {
+        e.preventDefault();
+        props.onSubmit(input)
+
+        
+    }
     return (
        
             <Wrapper>
@@ -35,8 +42,8 @@ function Navbar() {
                             <SearchIcon />
                         </IconButton>
                         <form>
-                            <input type="text" />
-                            <button type="submit" ></button>
+                            <input type="text" onChange={(e) => setInput(e.target.value)} />
+                            <button type="submit" onClick={onSearchSubmit} ></button>
                         </form>
                     </SearchBarWrapper>
                 </SearchWrapper>
